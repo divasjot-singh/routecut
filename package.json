@@ -1,6 +1,7 @@
 {
   "name": "routecut",
   "version": "1.0.0",
+  "type": "module",
   "description": "URL Shortener ",
   "main": "src/server.js",
   "scripts": {

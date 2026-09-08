@@ -1,4 +1,4 @@
-const nanoid = require('nanoid');
+import nanoid from 'nanoid';
 
 const shortenUrl = (db, url) => {
   const shortenedUrls = db.collection('shortenedUrls');
@@ -23,3 +23,5 @@ const checkIfShortUrlCodeExists = (db, code) => db.collection('shortenedUrls')
 
     return doc;
   });
+
+export { shortenUrl, checkIfShortUrlCodeExists };
