@@ -1,6 +1,6 @@
 # URL Shortener Demo
 
-A URL Shortener Application built with Node.js, Express and MongoDB. Tutorial: https://freshman.tech/url-shortener/
+A URL Shortener Application built with Node.js, Express and MongoDB
 
 This project is live at https://freshman-shortener.herokuapp.com/
 
