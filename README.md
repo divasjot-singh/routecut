@@ -1,26 +1,43 @@
-# URL Shortener Demo
+# RouteCut
 
-A URL Shortener Application built with Node.js, Express and MongoDB. Tutorial: https://freshman.tech/url-shortener/
+### A small link with a useful story.
 
-This project is live at https://freshman-shortener.herokuapp.com/
+RouteCut is a URL-shortening service built by **Divasjot Singh** using Node.js, Express.js, and MongoDB.
 
-## Prerequisites
+It converts long HTTP and HTTPS URLs into short, shareable links. When a short link is visited, RouteCut finds the original URL, increments its click count, and redirects the visitor.
 
-You must have Node.js, npm and MongoDB installed on your machine. This project was built against the following versions:
+## Features
 
-- Node v11.2.0
-- npm v6.6.0
-- MongoDB v4.0.5
+- Seven-character short-link generation using Nanoid
+- URL format and DNS validation
+- Duplicate-safe URL creation
+- Atomic click tracking
+- MongoDB schema validation
+- Unique indexes for URLs and short IDs
+- REST APIs for links, analytics, and deletion
+- Browser interface with copy-to-clipboard support
 
-## Setup
+## Tech Stack
 
-- Clone this repo to your machine
-- `cd` into the project folder and run `npm install`
-- Rename `.env.sample` to `.env`
-- Run `npm start`
-- Navigate to http://localhost:4100
+- Node.js
+- Express.js
+- MongoDB
+- Nanoid
+- HTML
+- CSS
+- JavaScript
 
-## How to use
+## Run Locally
 
-- Enter a URL into the input field and hit **Shorten**. The shortened URL will be displayed on the page.
-- Open the shortened URL in a new tab. It should redirect you to the original URL.
+### Requirements
+
+- Node.js 24 or later
+- npm
+- MongoDB or MongoDB Atlas
+
+### Installation
+
+Install the project dependencies:
+
+```bash
+npm install
