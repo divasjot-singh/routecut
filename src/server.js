@@ -142,6 +142,10 @@ app.get('/', (req, res) => {
   res.sendFile(htmlPath);
 })
 
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
 app.post('/new', (req, res) => createShortenedUrl(req, res, 200));
 
 app.post('/api/urls', (req, res) => createShortenedUrl(req, res, 201));
